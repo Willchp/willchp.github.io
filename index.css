@@ -1,0 +1,146 @@
+.hero {
+  display: flex;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 60vh;
+  align-self: stretch;
+  position:static;
+  background-color: var(--color-whitesmoke);
+  overflow: hidden;
+  flex-direction: row;
+}
+
+.left-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60vw;
+  height: 100%;
+  font-family: var(--font-ibm-plex-sans);
+}
+
+.introduction {
+  position: relative;
+  top: 10vh;
+  left: 10vh;
+  width: 100%;
+  font-size: var(--font-size-77xl);
+  color: var(--color-black);
+}
+
+.yo {
+  position: relative;
+  top: 0px;
+  left: 32px;
+  margin: 0;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  z-index: 1;
+}
+
+.im-will {
+  margin: 0;
+  width: 100%;
+  position: relative;
+  top: -20px;
+  left: 100px;
+  font-size: inherit;
+  font-weight: 300;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.will {
+  color: var(--highlight);
+}
+
+.mini-blurb {
+  position: relative;
+  left: 24px;
+  width: 100%;
+  max-width: 600px;
+  color: var(--body-copy);
+  font-family: var(--font-ibm-plex-sans);
+  flex-wrap: wrap;
+  margin-top: auto;
+  margin-bottom: 24px;
+}
+
+.highlight {
+  color: var(--highlight);
+  font-weight: 600;
+}
+
+.hero-image {
+  position: relative;
+  margin-left: auto;
+  margin-right: 24px;
+  width: 40vw;
+  max-width: 420px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.base {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 40vh;
+  background-color: var(--color-white);
+  font-family: var(--font-ibm-plex-sans);
+}
+
+.main-blurb {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-right: 4%;
+  width: 720px;
+  color: var(--color-black);
+  max-width: 92%;
+  justify-content: center;
+}
+
+.horizontal-line {
+  width: 92%; 
+  height: 1px;
+  background-color: var(--body-copy);
+  border: none;
+  margin: 0;
+  margin-top: auto;
+}
+
+.footer {
+  margin-top: auto;
+  width: 100vw;
+  height: 50px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white);
+  font-family: var(--font-source-code-pro);
+  margin:0;
+}
+
+.button {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  line-height: 50px;
+}
