@@ -17,6 +17,7 @@ body {
   --font-size-lgi: 19px;
   --font-size-xl: 20px;
   --font-size-base: 16px;
+  --font-size-94xl: 120px;
   --font-size-77xl: 96px;
   --font-size-29xl: 48px;
   --font-size-10xl: 29px;
@@ -26,14 +27,15 @@ body {
   /* Colors */
   --color-white: #fff;
   --color-black: #000;
-  --color-sandybrown-100: #ffc46d;
   --highlight: #ffa34e;
   --body-copy: #646464;
   --color-whitesmoke: #f8f8f8;
-  --color-powderblue: #88cdd1;
-  --color-mediumpurple: #b881ff;
   --color-lightcoral: #ff8888;
   --color-cornflowerblue: #8dadff;
+  --color-mediumpurple: #b881ff;
+  --color-sandybrown-100: #ffc46d;
+  --color-powderblue: #88cdd1;
+  --color-barbiepink: #f08ef2;
   --color-gainsboro: #d9d9d9;
 
   /* Gaps */
@@ -64,4 +66,6 @@ body {
   /* Border radiuses */
   --br-3xs: 10px;
   --br-xl: 20px;
+
+  --research-card-width: 360px;
 }
