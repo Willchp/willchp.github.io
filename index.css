@@ -155,3 +155,30 @@
   text-decoration: none;
   color: var(--highlight);
 }
+
+@media screen and (max-width: 1000px) {
+  .yo {
+    left: 0px;
+    font-size: var(--font-size-50xl);
+  }
+  .im-will {
+    top: -40px;
+    left: 48px;
+    font-size: var(--font-size-50xl);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .yo {
+    left: 0px;
+    font-size: var(--font-size-50xl);
+  }
+  .im-will {
+    top: -40px;
+    left: 0px;
+    font-size: var(--font-size-50xl);
+  }
+  .main-blurb {
+    font-size: var(--font-size-sm);
+  }
+}
