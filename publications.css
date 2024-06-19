@@ -7,6 +7,7 @@
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .buttons {
@@ -213,4 +214,8 @@
 
 .paper-icons-media-link {
     background-color: var(--color-barbiepink);
+}
+
+.link-button-wrapper{
+    display: block;
 }
