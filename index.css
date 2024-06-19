@@ -122,7 +122,7 @@
 .footer {
   margin-top: 0;
   width: 100vw;
-  height: 50px;
+  height: 64px;
 }
 
 .buttons {
@@ -141,5 +141,17 @@
   height: 100%;
   text-align: center;
   justify-content: center;
-  line-height: 50px;
+  line-height: 64px;
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.active-button {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  line-height: 64px;
+  text-decoration: none;
+  color: var(--highlight);
 }

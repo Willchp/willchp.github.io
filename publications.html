@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./publications.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=IBM Plex Sans:wght@300;400;500;700&display=swap"
@@ -28,725 +29,502 @@
     />
   </head>
   <body>
-    <div class="publications2">
-      <header class="button-container">
-        <div class="buttoncreative1">
-          <div class="button-shape"></div>
-          <div class="publication-button-shape"></div>
-          <div class="button-content">
-            <a class="creative3">creative</a>
-          </div>
+    <header class="header">
+      <div class="buttons">
+        <a class="button" href="./index.html">about me</a>
+        <a class="active-button" href="./publications.html">publications</a>
+        <a class="button" href="./creative.html">creative</a>
+        <a class="button" href="./assets/cv.pdf">cv</a>
+      </div>
+      <div class="horizontal-line"></div>
+    </header>
+    <div class="page-layout">
+        <div class="publication-list">
+            <div class="research-card">
+                <img src="./images/explorer.png" alt="placeholder" />
+                <div class="research-card-text">
+                    <div class="paper-title">
+                        A Touch, Vision, and Language Dataset for Multimodal Alignment
+                    </div>
+                    <div class="paper-authors">
+                        Max Fu, Gaurav Datta*, Huang Huang*,
+                        <span class="will-highlight">Will Panitch*</span>,
+                        Jaimyn Drake*, Joseph Ortiz, Mustafa Mukadam, Mike Lambeta,
+                        Roberto Calandra, Ken Goldberg
+                    </div>
+                    <div class="mini-abstract">
+                        We design and fabricate hardware for collecting aligned tactile
+                        and visual scene observations, then use it to curate a dataset
+                        of more than 40,000 vision-touch training pairs. Using a
+                        combination of human language labels and pseudolabels, we train
+                        an aligned tactile encoder and fine-tune a VLM to perform Q&A and
+                        understanding tasks based on touch, vision, and language inputs.
+                    </div>
+                    <div class="link-row">
+                        <div class="conference-block">
+                            <div class="conference-text">
+                                ICML 2024 - Oral
+                            </div>
+                        </div>
+                        <div class="link-buttons">
+                            <div class="paper-icons-text-link">
+                                <i class="fa-solid fa-file-lines"></i>
+                            </div>
+                            <div class="paper-icons-site-link">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div class="paper-icons-code-link">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="paper-icons-data-link">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <div class="paper-icons-model-link">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="research-card">
+                <img src="./images/explorer.png" alt="placeholder" />
+                <div class="research-card-text">
+                    <div class="paper-title">
+                        Automating Deformable Gasket Assembly
+                    </div>
+                    <div class="paper-authors">
+                        Simeon Adebola*, Tara Sadjadpour*, Karim El-Refai*, 
+                        <span class="will-highlight">Will Panitch</span>,
+                        Zehan Ma, Roy Lin, Tianshuang Qiu, Shreya Ganti, 
+                        Charlotte Le, Jaimyn Drake, Ken Goldberg
+                    </div>
+                    <div class="mini-abstract">
+                        We formalize the gasket assembly task, in which a flexible
+                        component is inserted into a rigid channel to create a 
+                        tight seal. This task is long horizon, low tolerance, and 
+                        contact rich, making it challenging to perform in a robotic 
+                        setting. We then present both a learned (using diffusion 
+                        policy) and an analytical (using computer vision) method for 
+                        autonomously performing this task.
+                    </div>
+                    <div class="link-row">
+                        <div class="conference-block">
+                            <div class="conference-text">
+                                CASE 2024
+                            </div>
+                        </div>
+                        <div class="link-buttons">
+                            <div class="paper-icons-text-link">
+                                <i class="fa-solid fa-file-lines"></i>
+                            </div>
+                            <div class="paper-icons-site-link">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div class="paper-icons-code-link">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="research-card">
+                <img src="./images/explorer.png" alt="placeholder" />
+                <div class="research-card-text">
+                    <div class="paper-title">
+                        Deformable Gasket Assembly
+                    </div>
+                    <div class="paper-authors">
+                        Simeon Adebola*, Tara Sadjadpour*, Karim El-Refai*, 
+                        <span class="will-highlight">Will Panitch</span>,
+                        Zehan Ma, Roy Lin, Tianshuang Qiu, Shreya Ganti, 
+                        Charlotte Le, Jaimyn Drake, Ken Goldberg
+                    </div>
+                    <div class="mini-abstract">
+                        We briefly introduce the gasket assembly task, a
+                        high-contact industrial assembly problem, and
+                        discuss a number of potential autonomous approaches.
+                    </div>
+                    <div class="link-row">
+                        <div class="conference-block">
+                            <div class="conference-text">
+                                ICRA 2024 - RMDO Workshop
+                            </div>
+                        </div>
+                        <div class="link-buttons">
+                            <div class="paper-icons-text-link">
+                                <i class="fa-solid fa-file-lines"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="research-card">
+                <img src="./images/explorer.png" alt="placeholder" />
+                <div class="research-card-text">
+                    <div class="paper-title">
+                        Robot-Assisted Vascular Shunt Insertion with the 
+                        dVRK Surgical Robot
+                    </div>
+                    <div class="paper-authors">
+                        Karthik Dharmarajan*
+                        <span class="will-highlight">Will Panitch*</span>,
+                        Baiyu Shi, Huang Huang, Lawrence Yunliang Chen, 
+                        Masoud Moghani, Qinxi Yu, Kush Hari, Thomas Low, 
+                        Danyal Fer, Animesh Garg, Ken Goldberg
+                    </div>
+                    <div class="mini-abstract">
+                        We propose an expanded framework for vascular shunt insertion
+                        assisted by a commercial robot surgical assistant under 
+                        various surgical use cases. We further present a physics-based 
+                        simulation environment for shunt insertion built on top of the
+                        NVIDIA Isaac-ORBIT simulator and a dataset of insertion
+                        trajectories collected using the environment. We then use the
+                        framework to demonstrate autonomous vascular shunt insertion
+                        with the dVRK robot in a realistic vessel phantom.
+                    </div>
+                    <div class="link-row">
+                        <div class="conference-block">
+                            <div class="conference-text">
+                                JMRR SI 2023
+                            </div>
+                        </div>
+                        <div class="link-buttons">
+                            <div class="paper-icons-text-link">
+                                <i class="fa-solid fa-file-lines"></i>
+                            </div>
+                            <div class="paper-icons-site-link">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div class="paper-icons-code-link">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="paper-icons-media-link">
+                                <i class="fa-solid fa-pencil"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="research-card">
+                <img src="./images/explorer.png" alt="placeholder" />
+                <div class="research-card-text">
+                    <div class="paper-title">
+                        A Trimodal Framework for Robot-Assisted Vascular 
+                        Shunt Insertion When a Supervising Surgeon is Local,
+                        Remote, or Unavailable
+                    </div>
+                    <div class="paper-authors">
+                        Karthik Dharmarajan*
+                        <span class="will-highlight">Will Panitch*</span>,
+                        Baiyu Shi, Huang Huang, Lawrence Yunliang Chen, 
+                        Thomas Low, Danyal Fer, Ken Goldberg
+                    </div>
+                    <div class="mini-abstract">
+                        We develop a robotic system to autonomously assist in 
+                        vascular shunt insertion, a common surgical procedure
+                        requiring a surgeon-and-surgical-assistant team
+                        performed to temporarily restore blood flow to damaged
+                        tissues. We consider three scenarios: (1) a surgeon is
+                        available locally; (2) a remote surgeon is available
+                        via teleoperation; (3) no surgeon is available. In
+                        each scenario, the robot operates in a different mode,
+                        either by teleoperation or automation, to perform the
+                        missing functions.
+                    </div>
+                    <div class="link-row">
+                        <div class="conference-block">
+                            <div class="conference-text">
+                                ISMR 2023 - Oral
+                            </div>
+                        </div>
+                        <div class="link-buttons">
+                            <div class="paper-icons-text-link">
+                                <i class="fa-solid fa-file-lines"></i>
+                            </div>
+                            <div class="paper-icons-site-link">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div class="paper-icons-code-link">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="research-card">
+                <img src="./images/explorer.png" alt="placeholder" />
+                <div class="research-card-text">
+                    <div class="paper-title">
+                        3-D Localization of Micromanipulators Using Microscopy 
+                        for Autonomous Visual Servoing
+                    </div>
+                    <div class="paper-authors">
+                        Ryan Mei,
+                        <span class="will-highlight">Will Panitch</span>,
+                        Laura Waller
+                    </div>
+                    <div class="mini-abstract">
+                        We rapidly determine the 3-D position of a glass-pipette
+                        micromanipulator using color-coded illumination and DPC
+                        optical microscopy, then demonstrate the potential for
+                        autonomous visual servoing and multi-manipulator systems
+                        for highly parallelized cell manipulation using the
+                        proporsed localization method as a feedback controller.
+                    </div>
+                    <div class="link-row">
+                        <div class="conference-block">
+                            <div class="conference-text">
+                                Optica COSI 2022
+                            </div>
+                        </div>
+                        <div class="link-buttons">
+                            <div class="paper-icons-text-link">
+                                <i class="fa-solid fa-file-lines"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="buttoncv2">
-          <div class="buttoncv-inner"></div>
-          <div class="buttoncv-child1"></div>
-          <a class="cv3">cv</a>
+        <div class="publication-list">
+            <div class="research-blurb">
+                > &nbsp;&nbsp;
+                This list contains some of the published, peer-reviewed 
+                papers that I've been lucky enough to work on. By far 
+                the best part of research is the opportunity to 
+                collaborate with and learn from some of the smartest, 
+                most interesting people in the world. All of these
+                papers would not have been possible without my super
+                cool co-authors, and I hope that you check out their
+                work as well if you find anything here of interest.
+            </div>
+            <div class="research-card">
+                <img src="./images/explorer.png" alt="placeholder" />
+                <div class="research-card-text">
+                    <div class="paper-title">
+                        STITCH: An Augmented Dexterity Algorithm for Suture Throws 
+                        Involving Thread Management, Cinching, and Handover
+                    </div>
+                    <div class="paper-authors">
+                        Kush Hari*, Hansoul Kim*,
+                        <span class="will-highlight">Will Panitch*</span>,
+                        Kishore Srinivas, Vincent Schorp, Karthik Dharmarajan, 
+                        Shreya Ganti, Tara Sadjadpour, Ken Goldberg
+                    </div>
+                    <div class="mini-abstract">
+                        We teach a surgical robot to autonomously close wounds in
+                        dermal tissue using a simple running suture. To allow for
+                        the millimeter-level precision necessary to complete this task,
+                        we design a novel visual state-estimation and servoing pipeline
+                        using an optical flow-based stereo vision model, learned image
+                        segmentation. and RANSAC geometry fitting in point cloud space. 
+                        Our system demonstrates the ability to close raised, planar
+                        wounds without human intervention.
+                    </div>
+                    <div class="link-row">
+                        <div class="conference-block">
+                            <div class="conference-text">
+                                ISMR 2024 - Best Paper R.U.
+                            </div>
+                        </div>
+                        <div class="link-buttons">
+                            <div class="paper-icons-text-link">
+                                <i class="fa-solid fa-file-lines"></i>
+                            </div>
+                            <div class="paper-icons-site-link">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div class="paper-icons-code-link">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="paper-icons-media-link">
+                                <i class="fa-solid fa-pencil"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="research-card">
+                <img src="./images/explorer.png" alt="placeholder" />
+                <div class="research-card-text">
+                    <div class="paper-title">
+                        ORBIT-Surgical: An Open-Simulation Framework for
+                        Accelerated Learning Environments in Surgical
+                        Autonomy
+                    </div>
+                    <div class="paper-authors">
+                        Qinxi Yu, Masoud Moghani, Karthik Dharmarajan, Vincent Schorp,
+                        <span class="will-highlight">Will Panitch</span>,
+                        Jingzhou Liu, Kush Hari, Huang Huang, Mayank Mittal, 
+                        Ken Goldberg, Animesh Garg
+                    </div>
+                    <div class="mini-abstract">
+                        We present ORBIT-Surgical, a physics-based surgical 
+                        robot simulation framework with photorealistic 
+                        rendering in NVIDIA Omniverse. We provide 14 benchmark 
+                        surgical training tasks for the da Vinci Research Kit 
+                        (dVRK) and Smart Tissue Autonomous Robot (STAR). 
+                        ORBIT-Surgical leverages GPU parallelization to train 
+                        reinforcement learning and imitation learning algorithms. 
+                        We also demonstrate sim-to-real transfer of policies
+                        learned in ORBIT-Surgical onto a physical dVRK robot.
+                    </div>
+                    <div class="link-row">
+                        <div class="conference-block">
+                            <div class="conference-text">
+                                ICRA 2024
+                            </div>
+                        </div>
+                        <div class="link-buttons">
+                            <div class="paper-icons-text-link">
+                                <i class="fa-solid fa-file-lines"></i>
+                            </div>
+                            <div class="paper-icons-site-link">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div class="paper-icons-code-link">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="paper-icons-media-link">
+                                <i class="fa-solid fa-pencil"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="research-card">
+                <img src="./images/explorer.png" alt="placeholder" />
+                <div class="research-card-text">
+                    <div class="paper-title">
+                        Self-Supervised Learning for Interactive Perception 
+                        of Thread for Autonomous Tail-Shortening
+                    </div>
+                    <div class="paper-authors">
+                        Vincent Schorp,
+                        <span class="will-highlight">Will Panitch</span>,
+                        Kaushik Shivakumar, Vainavi Viswanath, Justin Kerr,
+                        Yahav Avigal, Danyal Fer, Lionel Ott, Ken Goldberg
+                    </div>
+                    <div class="mini-abstract">
+                        We present a machine learning method for tracking
+                        and tracing thread in 3D which is robust to
+                        occlusions and complex configurations, and apply
+                        it to autonomously perform the "tail-shortening"
+                        task: pulling thread through an insertion point
+                        until a desired "tail" length remains exposed.
+                    </div>
+                    <div class="link-row">
+                        <div class="conference-block">
+                            <div class="conference-text">
+                                CASE 2023 - Finalist: Best Healthcare Automation Paper
+                            </div>
+                        </div>
+                        <div class="link-buttons">
+                            <div class="paper-icons-text-link">
+                                <i class="fa-solid fa-file-lines"></i>
+                            </div>
+                            <div class="paper-icons-site-link">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div class="paper-icons-code-link">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="research-card">
+                <img src="./images/explorer.png" alt="placeholder" />
+                <div class="research-card-text">
+                    <div class="paper-title">
+                        Automating Vascular Shunt Insertion with the 
+                        dVRK Surgical Robot
+                    </div>
+                    <div class="paper-authors">
+                        Karthik Dharmarajan*,
+                        <span class="will-highlight">Will Panitch*</span>,
+                        Muyan Jiang, Kishore Srinivas, Baiyu Shi, 
+                        Yahav Avigal, Huang Huang, Thomas Low, Danyal Fer, 
+                        Ken Goldberg
+                    </div>
+                    <div class="mini-abstract">
+                        We propose a pipeline to autonomously insert a 
+                        rigid object into a similar-diameter flexible tube,
+                        as in shunting and deformable assembly tasks.
+                        We use a learned visual model and an ensemble of
+                        imitation learners to grasp and dilate the flexible
+                        rim, then use a chamfer tilt followed by a screw
+                        motion to insert the rigid body.
+                    </div>
+                    <div class="link-row">
+                        <div class="conference-block">
+                            <div class="conference-text">
+                                ICRA 2023
+                            </div>
+                        </div>
+                        <div class="link-buttons">
+                            <div class="paper-icons-text-link">
+                                <i class="fa-solid fa-file-lines"></i>
+                            </div>
+                            <div class="paper-icons-site-link">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="research-card">
+                <img src="./images/explorer.png" alt="placeholder" />
+                <div class="research-card-text">
+                    <div class="paper-title">
+                        A Digital Twin Framework for Telesurgery in the
+                        Presence of Varying Network Quality
+                    </div>
+                    <div class="paper-authors">
+                        Sophea Bonne*,
+                        <span class="will-highlight">Will Panitch*</span>,
+                        Karthik Dharmarajan*, Kishore Srinivas*, Jerri-Lynn
+                        Kincade, Thomas Low, Bruce Knoth, Cregg Cowan,
+                        Dan Fer, Brijen Thananjeyan, Justin Kerr, Jeffrey
+                        Ichnowski, Ken Goldberg
+                    </div>
+                    <div class="mini-abstract">
+                        We develop a "digital twin," a 3D simulator that
+                        actively mirrors a real environment, for the FLS
+                        peg transfer training task, and present a
+                        framework that enables a teleoperator to perform
+                        this task over unstable or low-bandwidth
+                        communication channels using the digital twin.
+                        The operator remotely controls the simulated
+                        robot, which abstracts their motions into commands
+                        and transmits them to the real robot for
+                        semi-autonomous execution, then updates the
+                        simulator to match the real state of the pegboard.
+                    </div>
+                    <div class="link-row">
+                        <div class="conference-block">
+                            <div class="conference-text">
+                                CASE 2022
+                            </div>
+                        </div>
+                        <div class="link-buttons">
+                            <div class="paper-icons-text-link">
+                                <i class="fa-solid fa-file-lines"></i>
+                            </div>
+                            <div class="paper-icons-site-link">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div class="paper-icons-code-link">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="buttonabout2">
-          <div class="buttonabout-child2"></div>
-          <div class="buttonabout-child3"></div>
-          <div class="about-me-frame">
-            <a class="about-me2">about me</a>
-          </div>
+        <div class="publications-label">
+            Publications
         </div>
-        <div class="buttonpub-return">
-          <div class="buttonpub-return-child"></div>
-          <div class="buttonpub-return-item"></div>
-          <a class="publications3">publications</a>
-          <div class="return-home-wrapper">
-            <h2 class="return-home1">return home</h2>
-          </div>
-        </div>
-        <div class="separator1"></div>
-      </header>
-      <main class="research">
-        <div class="research-child"></div>
-        <div class="research-preview">
-          <div class="research-preview-inner">
-            <div class="video-mask-parent">
-              <div class="video-mask"></div>
-              <div class="frame-group">
-                <div class="prompting-with-robot-trajector-parent">
-                  <div class="prompting-with-robot">
-                    Prompting with Robot Trajectories for In-Context Imitation
-                    Learning
-                  </div>
-                  <div class="letian-fu-huang-container">
-                    <span
-                      >Letian Fu*, Huang Huang*, Gaurav Datta*, Lawrence
-                      Yunliang Chen,
-                    </span>
-                    <span class="will-panitch">Will Panitch</span>
-                    <span>, Fangchen Liu, Hui Li, Ken Goldberg</span>
-                  </div>
-                </div>
-                <div class="lorem-ipsum-dolor">Lorem ipsum dolor sit amet</div>
-                <div class="frame-container">
-                  <div class="corl-2024-wrapper">
-                    <div class="corl-2024">CoRL 2024</div>
-                  </div>
-                  <div class="paper-iconssite-link-parent">
-                    <div class="paper-iconssite-link">
-                      <div class="paper-iconssite-link-child"></div>
-                      <div class="div"></div>
-                    </div>
-                    <div class="paper-iconstext-link">
-                      <div class="paper-iconstext-link-child"></div>
-                      <div class="div1"></div>
-                    </div>
-                    <div class="paper-iconscode-link">
-                      <div class="paper-iconscode-link-child"></div>
-                      <div class="div2"></div>
-                    </div>
-                    <div class="paper-iconsdownload-link">
-                      <div class="paper-iconsdownload-link-child"></div>
-                      <div class="div3"></div>
-                    </div>
-                    <div class="paper-iconsdataset-link">
-                      <div class="paper-iconsdataset-link-child"></div>
-                      <div class="div4"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="preview-row">
-            <div class="preview-item">
-              <textarea class="video-mask1" rows="{11}" cols="{22}"> </textarea>
-              <div class="preview-title-container">
-                <div class="preview-title-row">
-                  <div class="a-touch-vision">
-                    A Touch, Vision, and Language Dataset for Multimodal
-                    Alignment
-                  </div>
-                  <div class="max-fu-gaurav-container">
-                    <span>Max Fu, Gaurav Datta*, Huang Huang*, </span>
-                    <span class="will-panitch1">Will Panitch*</span>
-                    <span
-                      >, Jaimyn Drake*, Joseph Ortiz, Mustafa Mukadam, Mike
-                      Lambeta, Roberto Calandra, Ken Goldberg</span
-                    >
-                  </div>
-                </div>
-                <div class="we-design-and">
-                  We design and fabricat hardware for collecting aligned tactile
-                  and visual scene observations, then use it to curate a dataset
-                  of more than 40,000 vision-touch training pairs. Using a
-                  combination of human language labels and pseudolabels, we
-                  train an aligned tactile encoder and fine-tune a VLM to
-                  perform Q&A and understanding tasks based on touch, vision,
-                  and language inputs.
-                </div>
-                <div class="preview-links">
-                  <div class="preview-link-row">
-                    <div class="icml-2024-">ICML 2024 - Oral</div>
-                  </div>
-                  <div class="preview-icons">
-                    <div class="paper-iconssite-link1">
-                      <div class="site-link-shape"></div>
-                      <div class="div5"></div>
-                    </div>
-                    <div class="paper-iconstext-link1">
-                      <div class="paper-iconstext-link-item"></div>
-                      <div class="div6"></div>
-                    </div>
-                    <div class="paper-iconscode-link1">
-                      <div class="code-link-shape"></div>
-                      <div class="div7"></div>
-                    </div>
-                    <div class="paper-iconsdownload-link1">
-                      <div class="download-link-shape"></div>
-                      <div class="div8"></div>
-                    </div>
-                    <div class="paper-iconsdataset-link1">
-                      <div class="dataset-link-shape"></div>
-                      <div class="div9"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="preview-row1">
-            <div class="video-mask-group">
-              <textarea class="video-mask2" rows="{11}" cols="{22}"> </textarea>
-              <div class="frame-div">
-                <div class="a-touch-vision-and-language-parent">
-                  <div class="a-touch-vision1">
-                    Automating Deformable Gasket Assembly
-                  </div>
-                  <div class="max-fu-gaurav-container1">
-                    <span
-                      >Simeon Adebola*, Tara Sadjadpour*, Karim El-Refai*,
-                    </span>
-                    <span class="will-panitch2">Will Panitch</span>
-                    <span
-                      >, Zehan Ma, Roy Lin, Tianshuang Qiu, Shreya Ganti,
-                      Charlotte Le, Jaimyn Drake, Ken Goldberg</span
-                    >
-                  </div>
-                </div>
-                <div class="we-formalize-the">
-                  We formalize the gasket assembly task, in which a flexible
-                  component is inserted into a rigid channel to create a tight
-                  seal. This task is long horizon, low tolerance, and contact
-                  rich, making it challenging to perform in a robotic setting.
-                  We then present both a learned (using diffusion policy) and an
-                  analytical (using computer vision) method for autonomously
-                  performing this task.
-                </div>
-                <div class="frame-parent1">
-                  <div class="icml-2024-oral-wrapper">
-                    <div class="icml-2024-1">CASE 2024</div>
-                  </div>
-                  <div class="paper-iconssite-link-group">
-                    <div class="paper-iconssite-link2">
-                      <div class="paper-iconssite-link-item"></div>
-                      <div class="div10"></div>
-                    </div>
-                    <div class="paper-iconstext-link2">
-                      <div class="paper-iconstext-link-inner"></div>
-                      <div class="div11"></div>
-                    </div>
-                    <div class="paper-iconscode-link2">
-                      <div class="paper-iconscode-link-item"></div>
-                      <div class="div12"></div>
-                    </div>
-                    <div class="paper-iconsdownload-link2">
-                      <div class="paper-iconsdownload-link-item"></div>
-                      <div class="div13"></div>
-                    </div>
-                    <div class="paper-iconsdataset-link2">
-                      <div class="paper-iconsdataset-link-item"></div>
-                      <div class="div14"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="preview-row2">
-            <div class="video-mask-container">
-              <textarea class="video-mask3" rows="{11}" cols="{22}"> </textarea>
-              <div class="frame-parent2">
-                <div class="a-touch-vision-and-language-group">
-                  <div class="a-touch-vision2">
-                    Robot-Assisted Vascular Shunt Insertion with the dVRK
-                    Surgical Robot
-                  </div>
-                  <div class="max-fu-gaurav-container2">
-                    <span>Karthik Dharmarajan*, </span>
-                    <span class="will-panitch3">Will Panitch*</span>
-                    <span
-                      >, Baiyu Shi, Huang Huang, Lawrence Yunliang Chen, Masoud
-                      Moghani, Qinxi Yu, Kush Hari, Thomas Low, Danyal Fer,
-                      Animesh Garg, Ken Goldberg</span
-                    >
-                  </div>
-                </div>
-                <div class="we-propose-an">
-                  We propose an expanded framework for vascular shunt insertion
-                  assisted by a commercial robot surgical assistant under
-                  various surgical use cases. We further present a physics-based
-                  simulation environment for shunt insertion built on top of the
-                  NVIDIA Isaac-ORBIT simulator and a dataset of insertion
-                  trajectories collected using the environment. We then use the
-                  framework to demonstrate autonomous vascular shunt insertion
-                  with the dVRK robot in a realistic vessel phantom.
-                </div>
-                <div class="frame-parent3">
-                  <div class="icml-2024-oral-container">
-                    <div class="icml-2024-2">JMRR SI 2023</div>
-                  </div>
-                  <div class="paper-iconssite-link-container">
-                    <div class="paper-iconssite-link3">
-                      <div class="paper-iconssite-link-inner"></div>
-                      <div class="div15"></div>
-                    </div>
-                    <div class="paper-iconstext-link3">
-                      <div class="ellipse-div"></div>
-                      <div class="div16"></div>
-                    </div>
-                    <div class="paper-iconscode-link3">
-                      <div class="paper-iconscode-link-inner"></div>
-                      <div class="div17"></div>
-                    </div>
-                    <div class="paper-iconscitation-link">
-                      <div class="paper-iconscitation-link-child"></div>
-                      <div class="div18"></div>
-                    </div>
-                    <div class="paper-iconsdataset-link3">
-                      <div class="paper-iconsdataset-link-inner"></div>
-                      <div class="div19"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="preview-row3">
-            <div class="video-mask-parent1">
-              <textarea class="video-mask4" rows="{11}" cols="{22}"> </textarea>
-              <div class="frame-parent4">
-                <div class="a-trimodal-framework-for-robot-parent">
-                  <div class="a-trimodal-framework">
-                    A Trimodal Framework for Robot-Assisted Vascular Shunt
-                    Insertion When a Supervising Surgeon is Local, Remote, or
-                    Unavailable
-                  </div>
-                  <div class="max-fu-gaurav-container3">
-                    <span>Karthik Dharmarajan*, </span>
-                    <span class="will-panitch4">Will Panitch*</span>
-                    <span
-                      >, Baiyu Shi, Huang Huang, Lawrence Yunliang Chen, Thomas
-                      Low, Danyal Fer, Ken Goldberg</span
-                    >
-                  </div>
-                </div>
-                <div class="we-develop-a">
-                  We develop a robotic system to autonomously assist in vascular
-                  shunt insertion, a common surgical procedure requiring a
-                  surgeon-and-surgical-assistant team performed to temporarily
-                  restore blood flow to damaged tissues. We consider three
-                  scenarios: (1) a surgeon is available locally; (2) a remote
-                  surgeon is available via teleoperation; (3) no surgeon is
-                  available. In each scenario, the robot operates in a different
-                  mode, either by teleoperation or automation, to perform the
-                  missing functions.
-                </div>
-                <div class="frame-parent5">
-                  <div class="icml-2024-oral-frame">
-                    <div class="icml-2024-3">ISMR 2023 - Oral</div>
-                  </div>
-                  <div class="paper-iconssite-link-parent1">
-                    <div class="paper-iconssite-link4">
-                      <div class="paper-iconssite-link-child1"></div>
-                      <div class="div20"></div>
-                    </div>
-                    <div class="paper-iconstext-link4">
-                      <div class="paper-iconstext-link-child1"></div>
-                      <div class="div21"></div>
-                    </div>
-                    <div class="paper-iconscode-link4">
-                      <div class="paper-iconscode-link-child1"></div>
-                      <div class="div22"></div>
-                    </div>
-                    <div class="paper-iconsdownload-link3">
-                      <div class="paper-iconsdownload-link-inner"></div>
-                      <div class="div23"></div>
-                    </div>
-                    <div class="paper-iconsdataset-link4">
-                      <div class="paper-iconsdataset-link-child1"></div>
-                      <div class="div24"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="preview-row4">
-            <div class="video-mask-parent2">
-              <textarea class="video-mask5" rows="{11}" cols="{22}"> </textarea>
-              <div class="frame-parent6">
-                <div class="d-localization-of-micromanipul-parent">
-                  <div class="d-localization-of">
-                    3-D Localization of Micromanipulators Using Microscopy for
-                    Autonomous Visual Servoing
-                  </div>
-                  <div class="max-fu-gaurav-container4">
-                    <span>Ryan Mei, </span>
-                    <span class="will-panitch5">Will Panitch</span>
-                    <span>, Laura Waller</span>
-                  </div>
-                </div>
-                <div class="we-rapidly-determine">
-                  We rapidly determine the 3-D position of a glass-pipette
-                  micromanipulator using color-coded illumination and DPC
-                  optical microscopy, then demonstrate the potential for
-                  autonomous visual servoing and multi-manipulator systems for
-                  highly parallelized cell manipulation using the proporsed
-                  localization method as a feedback controller.
-                </div>
-                <div class="frame-parent7">
-                  <div class="icml-2024-oral-wrapper1">
-                    <div class="icml-2024-4">Optica COSI 2022</div>
-                  </div>
-                  <div class="paper-iconssite-link-parent2">
-                    <div class="paper-iconssite-link5">
-                      <div class="paper-iconssite-link-child2"></div>
-                      <div class="div25"></div>
-                    </div>
-                    <div class="paper-iconstext-link5">
-                      <div class="paper-iconstext-link-child2"></div>
-                      <div class="div26"></div>
-                    </div>
-                    <div class="paper-iconscode-link5">
-                      <div class="paper-iconscode-link-child2"></div>
-                      <div class="div27"></div>
-                    </div>
-                    <div class="paper-iconsdownload-link4">
-                      <div class="paper-iconsdownload-link-child1"></div>
-                      <div class="div28"></div>
-                    </div>
-                    <div class="paper-iconsdataset-link5">
-                      <div class="paper-iconsdataset-link-child2"></div>
-                      <div class="div29"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="research-inner">
-          <div class="video-mask-parent3">
-            <div class="video-mask6"></div>
-            <div class="frame-parent8">
-              <div class="sufia-language-guided-augment-parent">
-                <div class="sufia-language-guided-augment">
-                  SuFIA: Language-Guided Augmented Dexterity for Robotic
-                  Surgical Assistants
-                </div>
-                <div class="masoud-moghani-lars-container">
-                  <span>Masoud Moghani, Lars Doorenbos, </span>
-                  <span class="will-panitch6">Will Panitch</span>
-                  <span
-                    >, Sean Huver, Mahdi Azizian, Ken Goldberg, Animesh
-                    Garg</span
-                  >
-                </div>
-              </div>
-              <div class="lorem-ipsum-dolor1">Lorem ipsum dolor sit amet</div>
-              <div class="frame-parent9">
-                <div class="iros-2024-wrapper">
-                  <div class="iros-2024">IROS 2024</div>
-                </div>
-                <div class="paper-iconssite-link-parent3">
-                  <div class="paper-iconssite-link6">
-                    <div class="paper-iconssite-link-child3"></div>
-                    <div class="div30"></div>
-                  </div>
-                  <div class="paper-iconstext-link6">
-                    <div class="paper-iconstext-link-child3"></div>
-                    <div class="div31"></div>
-                  </div>
-                  <div class="paper-iconsdownload-link5">
-                    <div class="paper-iconsdownload-link-child2"></div>
-                    <div class="div32"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="research-highlight">
-          <div class="here-is-where-container">
-            <p class="here-is-where">
-              here is where i talk a bit about my work
-            </p>
-            <p class="blank-line2">&nbsp;</p>
-            <p class="blank-line3">&nbsp;</p>
-            <p class="blank-line4">&nbsp;</p>
-            <p class="blank-line5">&nbsp;</p>
-            <p class="blank-line6">&nbsp;</p>
-            <p class="blank-line7">&nbsp;</p>
-            <p class="gotta-write-something">gotta write something</p>
-          </div>
-          <div class="highlight-row">
-            <textarea class="video-mask7" rows="{11}" cols="{22}"> </textarea>
-            <div class="highlight-title-container">
-              <div class="highlight-title-row">
-                <div class="stitch-an-augmented">
-                  STITCH: An Augmented Dexterity Algorithm for Suture
-                  Throws Involving Thread Management, Cinching, and Handover
-                </div>
-                <div class="kush-hari-hansoul-container">
-                  <span>Kush Hari*, Hansoul Kim*, </span>
-                  <span class="will-panitch7">Will Panitch*</span>
-                  <span
-                    >, Kishore Srinivas, Vincent Schorp, Karthik Dharmarajan,
-                    Shreya Ganti, Tara Sadjadpour, Ken Goldberg</span
-                  >
-                </div>
-              </div>
-              <div class="we-teach-a">
-                We teach a surgical robot to autonomously close wounds in dermal
-                tissue using a simple running suture. To allow for the
-                millimeter-level precision necessary to complete this task, we
-                design a novel visual state-estimation and servoing pipeline
-                using an optical flow-based stereo vision model, learned image
-                segmentation. and RANSAC geometry fitting in point cloud space.
-                Our system demonstrates the ability to close raised, planar
-                wounds without human intervention.
-              </div>
-              <div class="highlight-links">
-                <div class="highlight-link-row">
-                  <div class="ismr-2024-">ISMR 2024 - Best Paper R.U.</div>
-                </div>
-                <div class="highlight-icons">
-                  <div class="paper-iconssite-link7">
-                    <div class="highlight-site-link-shape"></div>
-                    <div class="div33"></div>
-                  </div>
-                  <div class="paper-iconstext-link7">
-                    <div class="paper-iconstext-link-child4"></div>
-                    <div class="div34"></div>
-                  </div>
-                  <div class="paper-iconscode-link6">
-                    <div class="highlight-code-link-shape"></div>
-                    <div class="div35"></div>
-                  </div>
-                </div>
-                <div class="paper-iconsdownload-link6">
-                  <div class="paper-iconsdownload-link-child3"></div>
-                  <div class="div36"></div>
-                </div>
-                <div class="paper-iconsdataset-link6">
-                  <div class="paper-iconsdataset-link-child3"></div>
-                  <div class="div37"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="highlight-row1">
-            <textarea class="video-mask8" rows="{11}" cols="{22}"> </textarea>
-            <div class="frame-parent10">
-              <div class="orbit-surgical-an-open-simula-parent">
-                <div class="orbit-surgical-an-open-simula">
-                  ORBIT-Surgical: An Open-Simulation Framework for Accelerated
-                  Learning Environments in Surgical Autonomy
-                </div>
-                <div class="qinxi-yu-masoud-container">
-                  <span
-                    >Qinxi Yu, Masoud Moghani, Karthik Dharmarajan, Vincent
-                    Schorp,
-                  </span>
-                  <span class="will-panitch8">Will Panitch</span>
-                  <span
-                    >, Jingzhou Liu, Kush Hari, Huang Huang, Mayank Mittal, Ken
-                    Goldberg, Animesh Garg</span
-                  >
-                </div>
-              </div>
-              <div class="we-present-orbit-surgical">
-                We present ORBIT-Surgical, a physics-based surgical robot
-                simulation framework with photorealistic rendering in NVIDIA
-                Omniverse. We provide 14 benchmark surgical tasks for the da
-                Vinci Research Kit (dVRK) and Smart Tissue Autonomous Robot
-                (STAR) which represent common subtasks in surgical training.
-                ORBIT-Surgical leverages GPU parallelization to train
-                reinforcement learning and imitation learning algorithms to
-                facilitate study of robot learning to augment human surgical
-                skills. We also demonstrate sim-to-real transfer of policies
-                learned in ORBIT-Surgical onto a physical dVRK robot.
-              </div>
-              <div class="frame-parent11">
-                <div class="icra-2024-wrapper">
-                  <div class="icra-2024">ICRA 2024</div>
-                </div>
-                <div class="paper-iconssite-link-parent4">
-                  <div class="paper-iconssite-link8">
-                    <div class="paper-iconssite-link-child4"></div>
-                    <div class="div38"></div>
-                  </div>
-                  <div class="paper-iconstext-link8">
-                    <div class="paper-iconstext-link-child5"></div>
-                    <div class="div39"></div>
-                  </div>
-                  <div class="paper-iconscode-link7">
-                    <div class="paper-iconscode-link-child3"></div>
-                    <div class="div40"></div>
-                  </div>
-                </div>
-                <div class="paper-iconsdownload-link7">
-                  <div class="paper-iconsdownload-link-child4"></div>
-                  <div class="div41"></div>
-                </div>
-                <div class="paper-iconsdataset-link7">
-                  <div class="paper-iconsdataset-link-child4"></div>
-                  <div class="div42"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="interactive-perception">
-            <textarea class="video-mask9" rows="{11}" cols="{22}"> </textarea>
-            <div class="perception-preview">
-              <div class="self-supervised-learning-for">
-                Self-Supervised Learning for Interactive Perception of Thread
-                for Autonomous Tail-Shortening
-              </div>
-              <div class="perception-author-row">
-                <div class="vincent-schorp-will-container">
-                  <span>Vincent Schorp, </span>
-                  <span class="will-panitch9">Will Panitch</span>
-                  <span
-                    >, Kaushik Shivakumar, Vainavi Viswanath, Justin Kerr, Yahav
-                    Avigal, Danyal Fer, Lionel Ott, Ken Goldberg</span
-                  >
-                </div>
-              </div>
-              <div class="perception-author-row1">
-                <div class="we-present-a">
-                  We present a machine learning method for tracking and tracing
-                  thread in 3D which is robust to occlusions and complex
-                  configurations, and apply it to autonomously perform the
-                  "tail-shortening" task: pulling thread through an insertion
-                  point until a desired "tail" length remains exposed.
-                </div>
-              </div>
-              <div class="perception-award">
-                <div class="case-2023-finalist-best-hea-wrapper">
-                  <div class="case-2023-">
-                    CASE 2023 - Finalist: Best Healthcare Automation Paper
-                  </div>
-                </div>
-              </div>
-              <div class="perception-links-wrapper">
-                <div class="perception-links">
-                  <div class="paper-iconssite-link9">
-                    <div class="link-shape"></div>
-                    <div class="div43"></div>
-                  </div>
-                  <div class="paper-iconstext-link9">
-                    <div class="paper-iconstext-link-child6"></div>
-                    <div class="div44"></div>
-                  </div>
-                  <div class="paper-iconscode-link8">
-                    <div class="paper-iconscode-link-child4"></div>
-                    <div class="div45"></div>
-                  </div>
-                  <div class="paper-iconsdownload-link8">
-                    <div class="paper-iconsdownload-link-child5"></div>
-                    <div class="div46"></div>
-                  </div>
-                  <div class="paper-iconsdataset-link8">
-                    <div class="paper-iconsdataset-link-child5"></div>
-                    <div class="div47"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="highlight-row2">
-            <textarea class="video-mask10" rows="{11}" cols="{22}"> </textarea>
-            <div class="frame-parent12">
-              <div class="automating-vascular-shunt-inse-parent">
-                <div class="automating-vascular-shunt">
-                  Automating Vascular Shunt Insertion with the dVRK Surgical
-                  Robot
-                </div>
-                <div class="karthik-dharmarajan-will-container">
-                  <span>Karthik Dharmarajan*, </span>
-                  <span class="will-panitch10">Will Panitch*</span>
-                  <span
-                    >, Muyan Jiang, Kishore Srinivas, Baiyu Shi, Yahav Avigal,
-                    Huang Huang, Thomas Low, Danyal Fer, Ken Goldberg</span
-                  >
-                </div>
-              </div>
-              <div class="we-propose-a">
-                We propose a pipeline to autonomously insert a rigid object into
-                a similar-diameter flexible tube, as in shunting and deformable
-                assembly tasks. We use a learned visual model and an ensemble of
-                imitation learners to grasp and dilate the flexible rim, then
-                use a chamfer tilt followed by a screw motion to insert the
-                rigid body.
-              </div>
-              <div class="frame-parent13">
-                <div class="icra-2023-wrapper">
-                  <div class="icra-2023">ICRA 2023</div>
-                </div>
-                <div class="paper-iconssite-link-parent5">
-                  <div class="paper-iconssite-link10">
-                    <div class="paper-iconssite-link-child5"></div>
-                    <div class="div48"></div>
-                  </div>
-                  <div class="paper-iconstext-link10">
-                    <div class="paper-iconstext-link-child7"></div>
-                    <div class="div49"></div>
-                  </div>
-                  <div class="paper-iconscode-link9">
-                    <div class="paper-iconscode-link-child5"></div>
-                    <div class="div50"></div>
-                  </div>
-                  <div class="paper-iconsdownload-link9">
-                    <div class="highlight-download-link-shape"></div>
-                    <div class="div51"></div>
-                  </div>
-                  <div class="paper-iconsdataset-link9">
-                    <div class="highlight-dataset-link-shape"></div>
-                    <div class="div52"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="highlight-row3">
-            <textarea class="video-mask11" rows="{11}" cols="{22}"> </textarea>
-            <div class="frame-parent14">
-              <div class="a-digital-twin-framework-for-t-parent">
-                <div class="a-digital-twin">
-                  A Digital Twin Framework for Telesurgery in the Presence of
-                  Varying Network Quality
-                </div>
-                <div class="sophea-bonne-will-container">
-                  <span>Sophea Bonne*, </span>
-                  <span class="will-panitch11">Will Panitch*</span>
-                  <span
-                    >, Karthik Dharmarajan*, Kishore Srinivas*, Jerri-Lynn
-                    Kincade, Thomas Low, Bruce Knoth, Cregg Cowan, Dan Fer,
-                    Brijen Thananjeyan, Justin Kerr, Jeffrey Ichnowski, Ken
-                    Goldberg</span
-                  >
-                </div>
-              </div>
-              <div class="we-develop-a1">
-                We develop a "digital twin," a 3D simulator that actively
-                mirrors a real environment, for the FLS peg transfer training
-                task, and present a framework that enables a teleoperator to
-                perform this task over unstable or low-bandwidth communication
-                channels using the digital twin. The operator remotely controls
-                the simulated robot, which abstracts their motions into commands
-                and transmits them to the real robot for semi-autonomous
-                execution, then updates the simulator to match the real state of
-                the pegboard.
-              </div>
-              <div class="frame-parent15">
-                <div class="case-2022-wrapper">
-                  <div class="case-2022">CASE 2022</div>
-                </div>
-                <div class="paper-iconssite-link-parent6">
-                  <div class="paper-iconssite-link11">
-                    <div class="paper-iconssite-link-child6"></div>
-                    <div class="div53"></div>
-                  </div>
-                  <div class="paper-iconstext-link11">
-                    <div class="paper-iconstext-link-child8"></div>
-                    <div class="div54"></div>
-                  </div>
-                  <div class="paper-iconscode-link10">
-                    <div class="paper-iconscode-link-child6"></div>
-                    <div class="div55"></div>
-                  </div>
-                  <div class="paper-iconsdownload-link10">
-                    <div class="paper-iconsdownload-link-child6"></div>
-                    <div class="div56"></div>
-                  </div>
-                  <div class="paper-iconsdataset-link10">
-                    <div class="paper-iconsdataset-link-child6"></div>
-                    <div class="div57"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="publications-frame">
-          <h1 class="publications4">PUBLICATIONS</h1>
-        </div>
-      </main>
     </div>
   </body>
 </html>
