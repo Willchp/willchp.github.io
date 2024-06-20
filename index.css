@@ -182,3 +182,34 @@
     font-size: var(--font-size-sm);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .yo {
+    left: 0px;
+    font-size: var(--font-size-50xl);
+  }
+  .im-will {
+    top: -40px;
+    left: 40px;
+    font-size: var(--font-size-50xl);
+  }
+  .mini-blurb {
+    margin-bottom: auto;
+    max-width: 90vw;
+  }
+  .main-blurb {
+    font-size: var(--font-size-sm);
+  }
+  .hero {
+    height: 800px;
+    flex-direction: column;
+  }
+  .left-column {
+    width: 100vw
+  }
+  .hero-image {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 24px;
+  }
+}

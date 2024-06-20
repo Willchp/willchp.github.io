@@ -219,3 +219,18 @@
 .link-button-wrapper{
     display: block;
 }
+
+@media screen and (max-width: 800px) {
+    .page-layout {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .publication-list {
+        width: 90vw;
+    }
+    .publications-label {
+        font-size: var(--font-size-29xl);
+        writing-mode: horizontal-tb;
+        position: static;
+    }
+}
