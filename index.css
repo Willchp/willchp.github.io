@@ -176,7 +176,7 @@
 
 @media screen and (max-width: 750px) {
   .yo {
-    left: 0px;
+    left: 40px;
     font-size: var(--font-size-50xl);
   }
   .im-will {
@@ -186,6 +186,13 @@
   }
   .main-blurb {
     font-size: var(--font-size-sm);
+  }
+  .hero {
+    min-height: 400px;
+  }
+  .base {
+    height: 40vh;
+    min-height: 300px;
   }
 }
 
