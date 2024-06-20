@@ -234,6 +234,7 @@
 @media screen and (max-width: 800px) {
     .page-layout {
         flex-direction: column-reverse;
+        gap: 64px;
         align-items: center;
     }
     .publication-list {
