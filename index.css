@@ -23,7 +23,7 @@
 .introduction {
   position: relative;
   top: 10vh;
-  left: 10vh;
+  left: 10vw;
   width: 100%;
   font-size: var(--font-size-77xl);
   color: var(--color-black);
@@ -136,6 +136,8 @@
   margin:0;
 }
 
+.button-lg,
+.button-sm,
 .button {
   width: 25%;
   height: 100%;
@@ -144,6 +146,10 @@
   line-height: 64px;
   text-decoration: none;
   color: var(--color-black);
+}
+
+.button-sm {
+  display: none;
 }
 
 .active-button {
@@ -185,12 +191,12 @@
 
 @media screen and (max-width: 600px) {
   .yo {
-    left: 0px;
+    left: -12px;
     font-size: var(--font-size-50xl);
   }
   .im-will {
     top: -40px;
-    left: 40px;
+    left: 12px;
     font-size: var(--font-size-50xl);
   }
   .mini-blurb {
@@ -199,6 +205,9 @@
   }
   .main-blurb {
     font-size: var(--font-size-sm);
+  }
+  .base {
+    height: 60vh;
   }
   .hero {
     height: 800px;
@@ -211,5 +220,11 @@
     width: 300px;
     margin: auto;
     margin-bottom: 24px;
+  }
+  .button-lg {
+    display: none;
+  }
+  .button-sm {
+    display: block;
   }
 }

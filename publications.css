@@ -31,7 +31,7 @@
     color: var(--color-black);
 }
 
-.active-button {
+.active-button-lg {
     width: 25%;
     height: 100%;
     text-align: center;
@@ -39,6 +39,17 @@
     line-height: 64px;
     text-decoration: none;
     color: var(--highlight);
+}
+
+.active-button-sm {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    line-height: 64px;
+    text-decoration: none;
+    color: var(--highlight);
+    display: none;
 }
 
 .horizontal-line {
@@ -232,5 +243,11 @@
         font-size: var(--font-size-29xl);
         writing-mode: horizontal-tb;
         position: static;
+    }
+    .active-button-lg {
+        display: none;
+    }
+    .active-button-sm {
+        display: block;
     }
 }

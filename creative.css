@@ -18,6 +18,8 @@
   font-family: var(--font-source-code-pro);
   margin:0;
 }
+.button-lg,
+.button-sm,
 .button {
   width: 25%;
   height: 100%;
@@ -26,6 +28,9 @@
   line-height: 64px;
   text-decoration: none;
   color: var(--color-black);
+}
+.button-sm {
+  display: none;
 }
 .active-button {
   width: 25%;
@@ -95,6 +100,12 @@
   }
   .creative1 {
     gap: 115px;
+  }
+  .button-lg {
+    display: none;
+  }
+  .button-sm {
+    display: block;
   }
 }
 @media screen and (max-width: 450px) {
